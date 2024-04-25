@@ -17,13 +17,26 @@
             <p>Masukkan Suhu Derajat (C&deg;) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan 
                 hasil konversi ndalam betuk Fahrenheit(F&deg;)
             </p>
-            <p>Celcius (C&deg;)</p>
+            <div id="c-to-f">
+                <p>Celcius (C&deg;)</p>
             <input type="number" name="celcius" id="celcius" class="input" > <br>
             <button onclick="convertCelciusToFahrenheit(); calculateResult();">Konversi</button> 
             <button onclick="clearInput()">Reset</button> 
-            <button onclick="reverseConversion();  calculateResult2();">Reverse</button> 
+            <button onclick="clearInput();reverse();">Reverse</button> 
             <p>Fahrenheit (F&deg;)</p>
-            <input type="number" name="fahrenheit" id="fahrenheit" class="input"  > <br>
+            <input type="number" name="fahrenheit" id="fahrenheit" class="input"  >
+            </div>
+            
+            <div id="f-to-c">
+                <p>Fahrenheit (F&deg;)</p>
+                <input type="number" name="fahrenheit" id="fahrenheit2" class="input"  >
+                <p>Celcius (C&deg;)</p>
+                <input type="number" name="celcius" id="celcius2" class="input" > <br>
+                <button onclick="reverseConversion();calculateResult2();">Konversi</button> 
+                <button onclick="clearInput()">Reset</button> 
+                <button onclick=" reverse(); clearInput();">Reverse</button> 
+             </div>
+            <br>
             <p>Cara Kalkulasi</p>
             <input  name="result" id="result" class="result" >
             <p class="conversi">Cara Konversi Dari Celcius (C&deg;) ke Fahrenheit (F&deg;) </p>
